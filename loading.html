@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        body {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background: radial-gradient(circle, #fff 0%, #bbb 85%);
+        }
+        .block {
+
+        }
+        .ouro {
+            position: relative;
+            display: inline-block;
+            height: 46px;
+            width: 46px;
+            margin: 1em;
+            border-radius: 50%;
+            background: #dddddd;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1) inset,
+        0 0 25px rgba(0, 0, 255, 0.075);
+        }
+        .ouro:after {
+            content: '';
+            position: absolute;
+            top: 9px;
+            left: 9px;
+            display: block;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: #f2f2f2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+        }
+        .ouro > span {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            overflow: hidden;
+        }
+        .left {
+            left: 0;
+        }
+        .right {
+            left: 50%;
+        }
+        .anim {
+            position: absolute;
+            left: 100%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 999px;
+            background: #508ec3;
+            opacity: .8;
+            animation: ui-spinner-rotate-left 3s infinite;
+            transform-origin: 0 50% 0;
+        }
+    </style>
+</head>
+<body>
+<div class="block">
+    <p class="circle">
+			<span class="ouro">
+				<span class="left"><span class="anim"></span></span>
+				<span class="right"><span class="anim"></span></span>
+			</span>
+
+			<span class="ouro ouro2">
+				<span class="left"><span class="anim"></span></span>
+				<span class="right"><span class="anim"></span></span>
+			</span>
+
+			<span class="ouro ouro3">
+				<span class="left"><span class="anim"></span></span>
+				<span class="right"><span class="anim"></span></span>
+			</span>
+    </p>
+    <p class="round">
+			<span class="ouro">
+				<span class="left"><span class="anim"></span></span>
+				<span class="right"><span class="anim"></span></span>
+			</span>
+
+			<span class="ouro ouro2">
+				<span class="left"><span class="anim"></span></span>
+				<span class="right"><span class="anim"></span></span>
+			</span>
+
+			<span class="ouro ouro3">
+				<span class="left"><span class="anim"></span></span>
+				<span class="right"><span class="anim"></span></span>
+			</span>
+    </p>
+    <p class="double">
+			<span class="ouro">
+				<span class="left"><span class="anim"></span></span>
+				<span class="right"><span class="anim"></span></span>
+			</span>
+
+			<span class="ouro ouro2">
+				<span class="left"><span class="anim"></span></span>
+				<span class="right"><span class="anim"></span></span>
+			</span>
+
+			<span class="ouro ouro3">
+				<span class="left"><span class="anim"></span></span>
+				<span class="right"><span class="anim"></span></span>
+			</span>
+    </p>
+</div>
+
+</body>
+</html>
